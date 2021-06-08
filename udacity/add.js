@@ -1,4 +1,4 @@
-function add(x, y) {
+function sum(x, y) {
   let result;
   if ((typeof x && typeof y) !== "number") {
     throw new Error("Params must be a number");
@@ -9,9 +9,6 @@ function add(x, y) {
   console.log(x, y);
   console.log("result: ", result);
   if (parseInt(result) !== result) {
-    // console.log("parseInt: ", parseInt(result), result);
-    // console.log(`${x} plus ${y} equals: `, x + y);
-    // result = parseFloat(result.toFixed(1));
     result = parseFloat(result.toPrecision(12));
   }
   console.log(`${x} plus ${y} equals: `, result);
@@ -22,4 +19,5 @@ function add(x, y) {
 // add('five', 'six')
 // add(0.1, 0.2);
 // add(0.9, 0.9);
-add(0.234, 0.167);
+// add(0.234, 0.167);
+module.exports = sum;
