@@ -1,6 +1,7 @@
 function add(x, y) {
   let result;
-  return x + y
+  result = x + y;
+  console.log(`${x} plus ${y} equals: `, result)
 }
 
-console.log(add(5,6))
+add(5,6)
