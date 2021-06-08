@@ -7,3 +7,4 @@ function add(x, y) {
 
 add(5,6)
 add('five', 'six')
+add(.1, .2)
